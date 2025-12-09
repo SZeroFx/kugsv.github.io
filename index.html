@@ -1,1 +1,166 @@
-Test Page?
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sven Kugener — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f13;
+      --glass:rgba(255,255,255,0.08);
+      --muted:rgba(255,255,255,0.6);
+      --accent:linear-gradient(135deg,#7c3aed,#06b6d4);
+      --card-shadow:0 10px 30px rgba(0,0,0,0.5);
+      font-family:'Inter',system-ui;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#e6eef8;padding-bottom:80px}
+
+    /* NAVIGATION */
+    nav{
+      width:100%;display:flex;justify-content:center;gap:20px;padding:22px 0;
+      background:rgba(0,0,0,0.3);backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(255,255,255,0.05);
+      position:sticky;top:0;z-index:99;
+    }
+    nav button{
+      padding:10px 20px;border-radius:12px;
+      background:var(--glass);
+      color:#fff;border:1px solid rgba(255,255,255,0.1);
+      cursor:pointer;font-size:14px;
+      transition:0.25s;box-shadow:var(--card-shadow);
+    }
+    nav button:hover{transform:translateY(-2px);background:rgba(255,255,255,0.12)}
+
+    /* HEADER BOX */
+    .intro-box{
+      max-width:1100px;margin:40px auto;padding:28px;
+      background:rgba(255,255,255,0.03);border-radius:20px;
+      border:1px solid rgba(255,255,255,0.05);
+      display:flex;gap:28px;align-items:center;
+      box-shadow:var(--card-shadow);
+      width:100%;
+    }
+    
+    .intro-img{
+      width:100%;max-width:360px;height:100%;aspect-ratio:1/1;
+      border-radius:20px;background:rgba(255, 255, 255, 0);
+      display:flex;align-items:center;justify-content:center;font-size:26px;color:var(--muted);
+      flex:1;
+    }
+
+    .intro-img img {
+      height: 360px;
+      border-radius:20px;
+    }
+    
+    .intro-content h1{font-size:34px;font-weight:700;margin-bottom:10px}
+    .intro-content p{color:var(--muted);max-width:600px;font-size:15px}
+
+    /* SECTIONS */
+    .section{max-width:1100px;margin:60px auto;padding:0 20px}
+    .section h2{font-size:26px;margin-bottom:18px}
+    .card{
+      background:rgba(255,255,255,0.03);padding:24px;border-radius:16px;
+      border:1px solid rgba(255,255,255,0.05);box-shadow:var(--card-shadow);
+    }
+
+    /* PROJECT GRID */
+    .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .project-item{background:rgba(255,255,255,0.04);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06)}
+    .project-item h3{margin-bottom:6px}
+    .project-item p{color:var(--muted);font-size:14px}
+
+    /* SKILLS */
+    .skill-cat{margin-bottom:26px}
+    .skill-cat h3{font-size:20px;margin-bottom:10px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{padding:8px 12px;background:rgba(255,255,255,0.06);border-radius:999px;font-size:13px}
+
+    /* CERTS */
+    .cert-list{display:flex;flex-direction:column;gap:12px}
+    .cert{background:rgba(255,255,255,0.05);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06)}
+    input{padding:12px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#fff;flex:1}
+
+    /* CONTACT */
+    form{display:flex;flex-direction:column;gap:12px}
+    textarea{padding:12px;border-radius:10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#fff;min-height:120px}
+    .send-btn{padding:12px;background:var(--accent);border:none;border-radius:12px;font-weight:700;color:#000;cursor:pointer}
+  </style>
+</head>
+<body>
+
+<nav>
+  <button onclick="location.href='#projects'">Projects</button>
+  <button onclick="location.href='#skills'">Skills</button>
+  <button onclick="location.href='#certs'">Certificates</button>
+  <button onclick="location.href='#contact'">Contact</button>
+</nav>
+
+<div class="intro-box">
+  <div class="intro-img"><img src="./sven.jpg" alt=""></div>
+  <div class="intro-content">
+    <h1>Sven Kugener</h1>
+    <p>IT Technician & Cloud Computing Student – specialized in Linux servers, networking, security, virtualization, web development & Python.</p>
+  </div>
+</div>
+
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-item"><h3>Raspberry Pi Home Server</h3><p>Nginx reverse proxy, Apache2, Docker stacks, monitoring.</p></div>
+    <div class="project-item"><h3>Portfolio Website</h3><p>Glossy UI, responsive layout, dynamic certificate manager.</p></div>
+    <div class="project-item"><h3>Python Automation Tools</h3><p>Network utilities, monitoring tools, automation scripts.</p></div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <div class="skill-cat">
+      <h3>Web Development</h3>
+      <div class="skill-list">
+        <div class="pill">HTML</div><div class="pill">CSS</div><div class="pill">JavaScript</div><div class="pill">Laravel</div><div class="pill">AJAX</div><div class="pill">REST APIs</div>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h3>Server & Cloud</h3>
+      <div class="skill-list">
+        <div class="pill">Linux Administration</div><div class="pill">Bash</div><div class="pill">Docker</div><div class="pill">Networking</div><div class="pill">Security Basics</div><div class="pill">VirtualBox</div>
+      </div>
+    </div>
+    <div class="skill-cat">
+      <h3>Development Tools</h3>
+      <div class="skill-list">
+        <div class="pill">Python</div><div class="pill">Git</div><div class="pill">PowerShell</div><div class="pill">SQL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="certs">
+  <h2>Certificates</h2>
+  <div class="card">
+    <div class="cert-list" id="certList"><div class="cert">No certificates added yet.</div></div>
+    <div style="display:flex;gap:10px;margin-top:14px">
+      <input id="certInput" placeholder="Add certificate..." />
+      <button onclick="addCert()" style="padding:12px 16px;background:var(--accent);border:none;border-radius:12px;color:#000;font-weight:700">+</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <form onsubmit="sendMail(event)">
+      <input name="name" placeholder="Name" required>
+      <input name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button class="send-btn">Send</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

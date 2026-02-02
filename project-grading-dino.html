@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading Dino Project - Sven Kugener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-title">Web Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+            <h1>Grading Dino</h1>
+            <div class="project-tags">
+                <span class="tag tag-school">School</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-detail-section">
+        <div class="container">
+            <div class="project-detail-content">
+                <!-- Project Logo -->
+                <div class="project-logo" style="text-align: center; margin-bottom: 2rem;">
+                    <img src="grading-dino-logo.png" alt="Grading Dino Logo" style="max-width: 200px; height: auto;">
+                </div>
+
+                <h2>Project Overview</h2>
+                <p>Grading Dino is a research and development project focused on creating a modern grade management system. The project emphasizes secure, scalable architecture using industry-standard technologies and best practices.</p>
+                <p>This system enables professors to efficiently manage student grades through an intuitive interface while maintaining strict security standards and data integrity.</p>
+
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                    <ul>
+                        <li><strong>Django 5.0</strong> - Full-featured web framework with built-in admin panel, authentication, and security features</li>
+                        <li><strong>PostgreSQL 16</strong> - Production-ready database with full ACID compliance and concurrent write support</li>
+                        <li><strong>Python 3.11</strong> - Modern programming language with strong typing and excellent ecosystem</li>
+                    </ul>
+
+                    <h3><i class="fas fa-shield-alt"></i> Security</h3>
+                    <ul>
+                        <li><strong>Argon2 Password Hashing</strong> - Winner of the Password Hashing Competition (2015), developed at University of Luxembourg</li>
+                        <li><strong>Django Security Features</strong> - Built-in CSRF, XSS, and SQL injection protection</li>
+                        <li><strong>Server-Side Validation</strong> - All logic and validation handled securely on the server</li>
+                    </ul>
+
+                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                    <ul>
+                        <li><strong>Pico.css</strong> - Minimalist CSS framework (~10KB) with semantic HTML styling</li>
+                        <li><strong>Server-Side Rendering</strong> - Django templates for security and simplicity</li>
+                    </ul>
+
+                    <h3><i class="fab fa-docker"></i> Deployment</h3>
+                    <ul>
+                        <li><strong>Docker + Docker Compose</strong> - Containerized architecture with single-command startup</li>
+                        <li><strong>Production-Ready</strong> - Isolated containers with consistent environment across deployments</li>
+                    </ul>
+                </div>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Admin Panel</strong> - Complete grade management UI for professors without custom development</li>
+                    <li><strong>Authentication & Authorization</strong> - User roles and permissions out-of-the-box</li>
+                    <li><strong>Automated Forms & Validation</strong> - Django's form generation with server-side validation</li>
+                    <li><strong>Data Integrity</strong> - PostgreSQL ACID compliance ensures reliable grade storage</li>
+                    <li><strong>Concurrent Operations</strong> - Multiple professors can grade simultaneously</li>
+                    <li><strong>Single Command Deployment</strong> - Simple <code>docker compose up</code> to start the entire system</li>
+                </ul>
+
+                <h2>Technical Approach</h2>
+                <p>The project follows Django's "batteries included" philosophy, leveraging built-in features for rapid, secure development. The architecture prioritizes:</p>
+                <ul>
+                    <li><strong>Convention over Configuration</strong> - Reduced complexity through framework standards</li>
+                    <li><strong>Security by Default</strong> - Multiple layers of built-in protection</li>
+                    <li><strong>Scalability</strong> - Docker containerization enables easy horizontal scaling</li>
+                    <li><strong>Academic Credibility</strong> - Argon2's Luxembourg university origin strengthens technical justification</li>
+                </ul>
+
+                <h2>Research Outcomes</h2>
+                <p>This research project successfully demonstrated how modern web frameworks and containerization technologies can create secure, maintainable grade management systems with minimal custom development. The choice of Argon2, developed at University of Luxembourg, provides both technical excellence and local academic significance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:svenkug@icloud.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

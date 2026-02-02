@@ -1,0 +1,8 @@
+WICHTIG: Platzieren Sie hier Ihr Profilbild mit dem Namen "profile.jpg"
+
+Das Bild sollte:
+- Im Quadratformat sein (z.B. 500x500px oder 1000x1000px)
+- Als "profile.jpg" benannt werden
+- Im gleichen Verzeichnis wie die HTML-Dateien liegen
+
+Das Bild wird automatisch in einen Kreis zugeschnitten und mit einem grünen Rand versehen.

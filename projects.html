@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sven Kugener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-title">Web Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-project-diagram"></i> My Projects</h1>
+            <p>A collection of my school and private projects</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="school">School</button>
+                <button class="filter-btn" data-filter="private">Private</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- LME Project -->
+                <a href="project-lme.html" class="project-card" data-category="school private">
+                    <div class="project-header">
+                        <h3>LME</h3>
+                        <div class="project-tags">
+                            <span class="tag tag-school">School</span>
+                            <span class="tag tag-private">Private</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">An ambitious school entrepreneurship project that we're transforming into a real business.</p>
+                    </div>
+                    <div class="project-overlay">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- LuxRP Project -->
+                <a href="project-luxrp.html" class="project-card" data-category="private">
+                    <div class="project-header">
+                        <h3>LuxRP</h3>
+                        <div class="project-tags">
+                            <span class="tag tag-private">Private</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Private roleplay community project</p>
+                    </div>
+                    <div class="project-overlay">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+
+                <!-- Grading Dino Project -->
+                <a href="project-grading-dino.html" class="project-card" data-category="school">
+                    <div class="project-header">
+                        <h3>Grading Dino</h3>
+                        <div class="project-tags">
+                            <span class="tag tag-school">School</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Research and development project</p>
+                    </div>
+                    <div class="project-overlay">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:svenkug@icloud.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxRP Project - Sven Kugener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-title">Web Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="page-header" style="position: relative; overflow: hidden;">
+        <!-- Background Image -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('luxrp-banner.jpg'); background-size: cover; background-position: center; opacity: 0.5; z-index: 0;"></div>
+        <!-- Dark Overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(10, 14, 39, 0.6) 0%, rgba(6, 10, 31, 0.7) 100%); z-index: 1;"></div>
+        <!-- Content -->
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="breadcrumb">
+                <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+            <h1>LuxRP</h1>
+            <div class="project-tags">
+                <span class="tag tag-private">Private</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-detail-section">
+        <div class="container">
+            <div class="project-detail-content">
+                <h2>Project Overview</h2>
+                <p>LuxRP is a Luxembourg-based FiveM roleplay server that provides an immersive Grand Theft Auto V multiplayer experience. FiveM is a modification framework for GTA V, enabling players to engage in custom multiplayer experiences on dedicated servers with unique gameplay mechanics, custom content, and community-driven roleplay scenarios.</p>
+                <p>The server creates a virtual environment where players can assume various roles and interact with each other in a realistic Luxembourg-themed setting, fostering a vibrant community of roleplayers.</p>
+
+                <!-- Project Links -->
+                <div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+                    <a href="https://luxrp.lu" target="_blank" class="btn btn-primary" style="text-decoration: none;">
+                        <i class="fas fa-external-link-alt"></i> Visit LuxRP Website
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=GRHONXy4Xb0" target="_blank" class="btn btn-secondary" style="text-decoration: none;">
+                        <i class="fab fa-youtube"></i> Watch Reportage
+                    </a>
+                </div>
+
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <h3><i class="fas fa-desktop"></i> Platform & Framework</h3>
+                    <ul>
+                        <li><strong>FiveM</strong> - Multiplayer modification framework for GTA V built on CitizenFX</li>
+                        <li><strong>NUI (New UI)</strong> - HTML-based user interface system using Chromium Embedded Framework</li>
+                        <li><strong>Grand Theft Auto V</strong> - Base game platform providing the 3D environment</li>
+                    </ul>
+
+                    <h3><i class="fas fa-code"></i> UI Development</h3>
+                    <ul>
+                        <li><strong>HTML5</strong> - Semantic markup for in-game interface structures</li>
+                        <li><strong>CSS3</strong> - Modern styling with animations and responsive design</li>
+                        <li><strong>JavaScript</strong> - Client-side interactivity and NUI callbacks</li>
+                    </ul>
+
+                    <h3><i class="fas fa-server"></i> Server-Side</h3>
+                    <ul>
+                        <li><strong>Lua</strong> - Server scripting and game logic (handled by other team members)</li>
+                        <li><strong>NUI Communication</strong> - <code>SendNUIMessage()</code> and <code>RegisterNUICallback()</code> for UI-game interaction</li>
+                    </ul>
+                </div>
+
+                <h2>My Role</h2>
+                <p>I served in a multi-faceted position as Developer, Supporter, and Administrator, handling both technical and community management responsibilities:</p>
+
+                <h3><i class="fas fa-laptop-code"></i> Developer</h3>
+                <ul>
+                    <li><strong>Custom UI Development</strong> - Designed and implemented in-game user interfaces using HTML, CSS, and JavaScript within the FiveM NUI framework</li>
+                    <li><strong>Responsive Design</strong> - Created interfaces that adapted to different screen resolutions and aspect ratios</li>
+                    <li><strong>User Experience</strong> - Focused on intuitive, immersive interfaces that enhanced gameplay without breaking roleplay immersion</li>
+                    <li><strong>Performance Optimization</strong> - Ensured UIs were lightweight and performant to maintain server stability</li>
+                    <li><strong>Integration</strong> - Worked with server-side Lua scripts to connect UI interactions with game mechanics</li>
+                </ul>
+
+                <h3><i class="fas fa-headset"></i> Supporter</h3>
+                <ul>
+                    <li><strong>Conflict Resolution</strong> - Managed heated support situations with diplomacy and fairness</li>
+                    <li><strong>Player Assistance</strong> - Helped players with technical issues, rule clarifications, and gameplay questions</li>
+                    <li><strong>Community Mediation</strong> - Resolved disputes between players to maintain a positive server environment</li>
+                    <li><strong>Documentation</strong> - Created guides and resources for common player questions</li>
+                </ul>
+
+                <h3><i class="fas fa-user-shield"></i> Administrator</h3>
+                <ul>
+                    <li><strong>Server Management</strong> - Handled administrative tasks including player management and server configuration</li>
+                    <li><strong>Policy Enforcement</strong> - Ensured server rules were followed and took appropriate action when necessary</li>
+                    <li><strong>Team Coordination</strong> - Collaborated with other staff members to maintain server quality</li>
+                    <li><strong>Community Building</strong> - Fostered a welcoming environment for both new and veteran players</li>
+                </ul>
+
+                <h2>Featured Project: Funex</h2>
+                <p>One of my major contributions to the LuxRP ecosystem was <strong>Funex</strong>, a dual-platform communication system that bridges the gap between web and in-game environments. This innovative chatting platform operates both as a standalone website and as an integrated in-game phone application, creating a seamless roleplay experience.</p>
+
+                <h3><i class="fas fa-comments"></i> Platform Architecture</h3>
+                <ul>
+                    <li><strong>Dual Environment</strong> - Functions as both a web application accessible via browser and an in-game mobile phone interface</li>
+                    <li><strong>Unified Codebase</strong> - Single HTML/CSS/JavaScript application deployed across both platforms</li>
+                </ul>
+
+                <h3><i class="fas fa-database"></i> Database Integration & Character Management</h3>
+                <ul>
+                    <li><strong>Automatic Character Synchronization</strong> - Player characters are automatically synced from the game database to Funex</li>
+                    <li><strong>Multi-Character Support</strong> - Each player can have multiple roleplay characters, all managed through a single account</li>
+                    <li><strong>Smart Character Detection</strong> - System automatically detects which character a player is logged into in-game</li>
+                </ul>
+
+                <h3><i class="fas fa-cogs"></i> Technical Stack</h3>
+                <ul>
+                    <li><strong>HTML/CSS/JavaScript</strong> - Frontend structure, styling, and interactivity</li>
+                    <li><strong>PHP</strong> - Server-side logic and backend processing</li>
+                    <li><strong>MySQL</strong> - Database management for character data and messages</li>
+                    <li><strong>SQL</strong> - Database queries for character synchronization and message retrieval</li>
+                    <li><strong>AJAX</strong> - Asynchronous communication between frontend and backend</li>
+                </ul>
+
+                <h3><i class="fas fa-users"></i> Roleplay Enhancement</h3>
+                <p>Funex significantly enhanced the immersive roleplay experience by allowing players to:</p>
+                <ul>
+                    <li><strong>Stay In Character</strong> - Communicate as their character even when not actively in-game</li>
+                    <li><strong>Plan Roleplay Scenarios</strong> - Coordinate events and meetups through character-based messaging</li>
+                    <li><strong>Maintain Continuity</strong> - Keep conversations going seamlessly between in-game and out-of-game time</li>
+                </ul>
+
+                <h2>Development Impact</h2>
+                <p>Working on LuxRP, particularly on complex projects like Funex, provided invaluable experience in full-stack web development within a game environment. The challenge of creating seamless cross-platform experiences, managing database synchronization, and maintaining roleplay immersion while handling technical complexities demonstrated the power of web technologies beyond traditional applications.</p>
+                <p>Combining technical development with community management responsibilities taught me how to balance feature development with user needs, resolve conflicts diplomatically, and work effectively within a multi-disciplinary team structure.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:svenkug@icloud.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

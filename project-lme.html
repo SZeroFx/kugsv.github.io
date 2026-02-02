@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LME Project - Sven Kugener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-title">Web Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="page-header" style="position: relative; overflow: hidden;">
+        <!-- Background Image -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('lme-banner.jpg'); background-size: cover; background-position: center; opacity: 0.5; z-index: 0;"></div>
+        <!-- Dark Overlay for better text readability -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(10, 14, 39, 0.6) 0%, rgba(6, 10, 31, 0.7) 100%); z-index: 1;"></div>
+        <!-- Content -->
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="breadcrumb">
+                <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+            <h1>LME</h1>
+            <p style="font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 600;">Luxembourg Media Engineering</p>
+            <div class="project-tags">
+                <span class="tag tag-school">School</span>
+                <span class="tag tag-private">Private</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-detail-section">
+        <div class="container">
+            <div class="project-detail-content">
+                <!-- Project Logo -->
+                <div class="project-logo" style="text-align: center; margin-bottom: 2rem;">
+                    <img src="lme-logo.png" alt="LME Logo" style="max-width: 200px; height: auto;">
+                </div>
+
+                <h2>Project Overview</h2>
+                <p><strong>LME</strong>(lme.lu) is an ambitious school entrepreneurship project that we're transforming into a real business. What started as an academic initiative is now evolving into a full-fledged startup, combining our learning experience with real-world business development.</p>
+                <p>LME provides a <strong>Secure Multi-Tenant Hosting Platform</strong> built on Hetzner infrastructure, designed to offer small organizations and individual clients reliable web hosting without the complexity and cost of large cloud providers.</p>
+
+                <!-- Project Links -->
+                <div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+                    <a href="https://lme.lu" target="_blank" class="btn btn-primary" style="text-decoration: none;">
+                        <i class="fas fa-external-link-alt"></i> Visit LME Website
+                    </a>
+                </div>
+
+                <h2>Business Vision</h2>
+                <p>LME bridges the gap between complex enterprise cloud solutions and unreliable shared hosting. Our mission is to provide:</p>
+                <ul>
+                    <li><strong>Professional Hosting Solutions</strong> - Enterprise-grade infrastructure at accessible prices</li>
+                    <li><strong>Complete Isolation</strong> - Each client website runs in its own secure environment</li>
+                    <li><strong>Transparent Operations</strong> - Clear documentation and straightforward management</li>
+                    <li><strong>Reliable Service</strong> - 24/7 monitoring with independent availability checks</li>
+                </ul>
+
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <h3><i class="fas fa-server"></i> Infrastructure & Virtualization</h3>
+                    <ul>
+                        <li><strong>Hetzner Dedicated Server</strong> - Reliable German infrastructure provider</li>
+                        <li><strong>Proxmox</strong> - Enterprise-grade virtualization platform for VM management</li>
+                        <li><strong>Docker + Docker Compose</strong> - Container orchestration for service isolation</li>
+                    </ul>
+
+                    <h3><i class="fas fa-globe"></i> Web Services & Security</h3>
+                    <ul>
+                        <li><strong>Nginx</strong> - High-performance web server and reverse proxy</li>
+                        <li><strong>Cloudflare</strong> - DNS management, DDoS protection, and security features</li>
+                        <li><strong>SSH & Firewall</strong> - Secure access and network protection</li>
+                    </ul>
+
+                    <h3><i class="fas fa-chart-line"></i> Monitoring & Management</h3>
+                    <ul>
+                        <li><strong>Raspberry Pi</strong> - Independent external monitoring system</li>
+                        <li><strong>Hetzner API</strong> - Resource monitoring and server management</li>
+                        <li><strong>Custom Scripts</strong> - Automated availability checks and alerts</li>
+                    </ul>
+                </div>
+
+                <h2>Technical Architecture</h2>
+                <p>LME's infrastructure is built on a multi-layered approach that ensures security, isolation, and scalability:</p>
+
+                <h3><i class="fas fa-layer-group"></i> Multi-Tenant Isolation</h3>
+                <ul>
+                    <li><strong>VM-Level Separation</strong> - Each client website runs in a dedicated Proxmox virtual machine</li>
+                    <li><strong>Container Isolation</strong> - Docker Compose separates services within each VM</li>
+                    <li><strong>Network Segmentation</strong> - Firewall rules prevent cross-tenant access</li>
+                    <li><strong>Resource Allocation</strong> - Guaranteed CPU, RAM, and storage per tenant</li>
+                </ul>
+
+                <h3><i class="fas fa-shield-alt"></i> Security Measures</h3>
+                <ul>
+                    <li><strong>Cloudflare Protection</strong> - DDoS mitigation and web application firewall</li>
+                    <li><strong>Secure Access</strong> - SSH key-based authentication with no password access</li>
+                    <li><strong>Automated Updates</strong> - Regular security patches and system updates</li>
+                    <li><strong>Backup Strategy</strong> - Regular VM snapshots for disaster recovery</li>
+                </ul>
+
+                <h3><i class="fas fa-heartbeat"></i> External Monitoring</h3>
+                <ul>
+                    <li><strong>Independent Checks</strong> - Raspberry Pi monitors from outside the hosting network</li>
+                    <li><strong>API Integration</strong> - Hetzner API provides real-time resource metrics</li>
+                    <li><strong>Availability Tracking</strong> - Continuous uptime monitoring for all client sites</li>
+                    <li><strong>Automated Alerts</strong> - Immediate notifications for service disruptions</li>
+                </ul>
+
+                <h2>Project Scope & Implementation</h2>
+
+                <h3><i class="fas fa-tasks"></i> Project Phases</h3>
+                <ul>
+                    <li><strong>Phase 1: Planning & Setup</strong> (6 hours) - Infrastructure design and server provisioning</li>
+                    <li><strong>Phase 2: Virtualization</strong> (12 hours) - Proxmox installation and VM configuration</li>
+                    <li><strong>Phase 3: Service Deployment</strong> (8 hours) - Dockerized web services and client onboarding</li>
+                    <li><strong>Phase 4: Monitoring & Documentation</strong> (12 hours) - External monitoring setup and maintenance guides</li>
+                </ul>
+
+                <h3><i class="fas fa-check-circle"></i> Success Criteria</h3>
+                <ul>
+                    <li>Multiple client websites running reliably and independently</li>
+                    <li>Monitoring system accurately reporting availability and resource status</li>
+                    <li>Secure access and DNS configuration verified and documented</li>
+                    <li>Clear documentation enabling repeatable deployment and maintenance</li>
+                </ul>
+
+                <h2>Business Development</h2>
+                <p>LME represents a unique combination of academic learning and real-world entrepreneurship:</p>
+                <ul>
+                    <li><strong>House of Entrepreneurship Partnership</strong> - Guidance and support from Luxembourg's entrepreneurship ecosystem</li>
+                    <li><strong>Team of Three</strong> - Collaborative approach combining technical expertise and business development</li>
+                    <li><strong>School to Startup</strong> - Transitioning from a PROMA course project to a functioning business</li>
+                    <li><strong>Market Focus</strong> - Targeting small organizations and individual clients who need reliable hosting</li>
+                    <li><strong>Scalable Model</strong> - Infrastructure designed to grow with customer demand</li>
+                </ul>
+
+                <h2>Problem Solved</h2>
+                <p>Many small projects and organizations face a hosting dilemma: enterprise cloud platforms are complex and expensive, while budget shared hosting lacks reliability and isolation. Setting up proper hosting infrastructure requires expertise in security, virtualization, and monitoring—knowledge that's often beyond the reach of beginners.</p>
+                <p>LME solves this by providing enterprise-grade infrastructure with straightforward management, making professional hosting accessible to small clients who need reliability without complexity.</p>
+
+                <h2>Project Impact</h2>
+                <p>LME demonstrates the practical application of infrastructure management, cloud hosting concepts, and entrepreneurial thinking. The project showcases skills in virtualization, containerization, networking, security, and business development—all while creating a real service that addresses genuine market needs.</p>
+                <p>This entrepreneurship journey combines technical expertise with business acumen, proving that school projects can evolve into viable commercial ventures with the right support, vision, and execution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:svenkug@icloud.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

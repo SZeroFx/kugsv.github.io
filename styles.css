@@ -671,20 +671,17 @@ a {
     transition: var(--transition);
 }
 
-.certificate-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow);
-}
-
-.certificate-card:hover::before {
-    transform: scaleX(1);
-}
 
 .certificate-icon {
     font-size: 3rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+}
+
+.certificate-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .certificate-content h3 {

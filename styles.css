@@ -281,6 +281,52 @@ a {
     line-height: 1.8;
 }
 
+/* ===================================
+   Placeholder Text (TODO: ersetzen)
+   =================================== */
+.placeholder {
+    background: rgba(255, 200, 0, 0.15);
+    border: 2px dashed #ffc800;
+    border-radius: 6px;
+    padding: 0.2em 0.4em;
+    color: #ffc800 !important;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+}
+
+.placeholder::before {
+    content: "✏ PLACEHOLDER: ";
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #ffc800;
+    opacity: 0.8;
+    font-style: normal;
+}
+
+.placeholder-block {
+    background: rgba(255, 200, 0, 0.1);
+    border: 2px dashed #ffc800;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    color: #ffc800 !important;
+    font-style: italic;
+    position: relative;
+}
+
+.placeholder-block::before {
+    content: "✏ PLACEHOLDER – bitte ersetzen";
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #ffc800;
+    opacity: 0.8;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 .section-title {
     text-align: center;
     font-size: 2.5rem;

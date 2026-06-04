@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Photo Cloud - Sven Kugener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-title">Web Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            </div>
+            <h1><i class="fas fa-cloud"></i> Private Photo Cloud</h1>
+            <p style="font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 600;">Self-hosted · Google & Apple independent</p>
+            <div class="project-tags">
+                <span class="tag tag-private">Private</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-detail-section">
+        <div class="container">
+            <div class="project-detail-content">
+
+                <h2>Overview</h2>
+                <p>
+                    Self-hosted replacement for Google Photos and Apple iCloud. Photos live on a local NAS,
+                    <strong>Immich</strong> runs in Docker on a Raspberry Pi 4, and <strong>Tailscale</strong>
+                    makes it accessible from anywhere — no subscription, no third-party cloud.
+                </p>
+
+                <h2>Hardware</h2>
+                <ul>
+                    <li><strong>Ugreen NAS DH2300 (2-Bay)</strong> — 2× 4 TB in RAID 1</li>
+                    <li><strong>Raspberry Pi 4 (8 GB)</strong> — Docker host</li>
+                </ul>
+
+                <h2>How it works</h2>
+                <p>
+                    The NAS doesn't support Docker, so storage and compute are split: the NAS share is mounted on the Pi,
+                    and Immich reads and writes photos directly to that mount. Tailscale connects all my devices in a
+                    private mesh network — no port forwarding, no public IP needed.
+                </p>
+
+                <h2>Software</h2>
+                <ul>
+                    <li><strong>Immich</strong> — self-hosted photo management, automatic mobile backup, face recognition, Google Photos-like UI</li>
+                    <li><strong>Docker</strong> — runs the full Immich stack (server, ML, database, Redis)</li>
+                    <li><strong>Tailscale</strong> — WireGuard-based VPN for secure remote access</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:svenkug@icloud.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

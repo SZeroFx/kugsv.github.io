@@ -88,6 +88,25 @@ if (scrollIndicator) {
 }
 
 // ===================================
+// CV Language Dropdown
+// ===================================
+const cvDropdown = document.getElementById('cv-dropdown');
+const cvDropdownToggle = document.getElementById('cv-dropdown-toggle');
+
+if (cvDropdown && cvDropdownToggle) {
+    cvDropdownToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        cvDropdown.classList.toggle('open');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!cvDropdown.contains(e.target)) {
+            cvDropdown.classList.remove('open');
+        }
+    });
+}
+
+// ===================================
 // Projects Filtering
 // ===================================
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -140,7 +159,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all cards and sections
-document.querySelectorAll('.overview-card, .project-card, .skill-category, .certificate-card, .contact-card').forEach(el => {
+document.querySelectorAll('.overview-card, .project-card, .skill-category, .certificate-card, .contact-card, .externe-post').forEach(el => {
     observer.observe(el);
 });
 

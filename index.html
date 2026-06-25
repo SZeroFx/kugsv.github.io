@@ -19,6 +19,7 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="externe.html">Externals</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -45,9 +46,19 @@
                     <a href="contact.html" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Contact
                     </a>
-                    <a href="cv_en_kugsv.pdf" class="btn btn-secondary" download>
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
+                    <div class="cv-dropdown" id="cv-dropdown">
+                        <a href="#" class="btn btn-secondary cv-dropdown-toggle" id="cv-dropdown-toggle">
+                            <i class="fas fa-download"></i> Download CV <i class="fas fa-chevron-down" style="font-size: 0.7em;"></i>
+                        </a>
+                        <div class="cv-dropdown-menu">
+                            <a href="cv_en_kugsv.pdf" download>
+                                <i class="fas fa-file-pdf"></i> English
+                            </a>
+                            <a href="cv_fr_kugsv.pdf" download>
+                                <i class="fas fa-file-pdf"></i> Français
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,6 +126,9 @@
                 </a>
                 <a href="mailto:svenkug@icloud.com">
                     <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linktr.ee/svenkug" target="_blank">
+                    <i class="fas fa-link"></i>
                 </a>
             </div>
         </div>

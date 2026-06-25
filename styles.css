@@ -222,6 +222,53 @@ a {
     color: var(--bg-dark);
 }
 
+.cv-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cv-dropdown-toggle {
+    text-decoration: none;
+}
+
+.cv-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.cv-dropdown.open .cv-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cv-dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cv-dropdown-menu a:hover {
+    background: var(--bg-darker);
+    color: var(--primary-color);
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -556,6 +603,65 @@ a {
 }
 
 /* ===================================
+   Externals Section
+   =================================== */
+.externe-section {
+    padding: 4rem 0;
+}
+
+.externe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.externe-post {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+}
+
+.externe-post-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.externe-post-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--bg-dark);
+    flex-shrink: 0;
+}
+
+.externe-post-body h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.externe-post-meta {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.externe-post-body p {
+    color: var(--text-secondary);
+}
+
+/* ===================================
    Skills Section
    =================================== */
 .skills-section {
@@ -826,6 +932,10 @@ a {
 
 .email-icon {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.linktree-icon {
+    background: linear-gradient(135deg, #43e660, #1ba94c);
 }
 
 .contact-content h3 {

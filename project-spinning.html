@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Photo Cloud - Sven Kugener</title>
+    <title>Spinning Project - Sven Kugener</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -36,10 +36,10 @@
             <div class="breadcrumb">
                 <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
             </div>
-            <h1><i class="fas fa-cloud"></i> Private Photo Cloud</h1>
-            <p style="font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 600;">Self-hosted · Google & Apple independent</p>
+            <h1><i class="fas fa-bicycle"></i> Spinning</h1>
+            <p style="font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 600;">LGK — Relais pour la Vie</p>
             <div class="project-tags">
-                <span class="tag tag-private">Private</span>
+                <span class="tag tag-school">School</span>
             </div>
         </div>
     </section>
@@ -49,32 +49,39 @@
         <div class="container">
             <div class="project-detail-content">
 
-                <h2>Overview</h2>
+                <h2>Project Overview</h2>
                 <p>
-                    Self-hosted replacement for Google Photos and Apple iCloud. Photos live on a local NAS,
-                    <strong>Immich</strong> runs in Docker on a Raspberry Pi 4, and <strong>Tailscale</strong>
-                    makes it accessible from anywhere — no subscription, no third-party cloud.
+                    Spinning was a class-wide project organized for <strong>Relais pour la Vie</strong> at our
+                    school (LGK). Instead of one big group working on everything together, every team in the
+                    class took ownership of a different part of the overall system. My part was building the
+                    <strong>online leaderboard</strong> that displayed live results during the event.
                 </p>
 
-                <h2>Hardware</h2>
+                <h2>My Role</h2>
                 <ul>
-                    <li><strong>Ugreen NAS DH2300 (2-Bay)</strong> — 2× 4 TB in RAID 1</li>
-                    <li><strong>Raspberry Pi 4 (8 GB)</strong> — Docker host</li>
+                    <li><strong>Online Leaderboard</strong> — designed and built the live leaderboard with SvelteKit</li>
                 </ul>
 
-                <h2>How it works</h2>
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                    <ul>
+                        <li><strong>SvelteKit</strong> — used to build and serve the live leaderboard interface</li>
+                    </ul>
+                </div>
+
+                <h2>Working Across Teams</h2>
                 <p>
-                    The NAS doesn't support Docker, so storage and compute are split: the NAS share is mounted on the Pi,
-                    and Immich reads and writes photos directly to that mount. Tailscale connects all my devices in a
-                    private mesh network — no port forwarding, no public IP needed.
+                    Because the project was split between several teams, each working on its own module, the
+                    biggest lesson wasn't technical it was about <strong>dividing the work</strong>. Staying
+                    within your own area worked well, but as soon as a topic crossed into someone else's scope,
+                    it had to be actively communicated rather than decided alone.
                 </p>
-
-                <h2>Software</h2>
-                <ul>
-                    <li><strong>Immich</strong> — self-hosted photo management, automatic mobile backup, face recognition, Google Photos-like UI</li>
-                    <li><strong>Docker</strong> — runs the full Immich stack (server, ML, database, Redis)</li>
-                    <li><strong>Tailscale</strong> — WireGuard-based VPN for secure remote access</li>
-                </ul>
+                <p>
+                    A good example was <strong>anonymizing student data</strong>: this touched three different
+                    teams at once (Frontend, Frontend Admin and Database), so all of us had to sit down together and agree on a shared approach before
+                    anyone could keep building.
+                </p>
 
             </div>
         </div>

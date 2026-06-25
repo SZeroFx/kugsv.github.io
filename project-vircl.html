@@ -37,7 +37,7 @@
                 <a href="projects.html"><i class="fas fa-arrow-left"></i> Back to Projects</a>
             </div>
             <h1><i class="fas fa-layer-group"></i> Server Virtualization Systems</h1>
-            <p style="font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 600;">VIRCL — BTS Cloud Computing</p>
+            <p style="font-size: 1.2rem; color: var(--primary-color); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 600;">VIRCL: BTS Cloud Computing</p>
             <div class="project-tags">
                 <span class="tag tag-school">School</span>
             </div>
@@ -52,7 +52,7 @@
                 <h2>Project Overview</h2>
                 <p>
                     In the VIRCL (Virtualization in the Cloud) module, we deployed and compared two industry-standard
-                    Type 1 hypervisors — <strong>Proxmox VE</strong> and <strong>VMware ESXi</strong> — on real HP server
+                    Type 1 hypervisors, <strong>Proxmox VE</strong> and <strong>VMware ESXi</strong>, on real HP server
                     hardware in the school server room. Starting from bare-metal installation via ILO remote management,
                     we covered the full lifecycle of virtual machines: creation via GUI and CLI, hardware configuration,
                     cloning, snapshots, templates, backups, storage migration, and live hypervisor migration.
@@ -76,60 +76,50 @@
                 <h2>Hypervisors Used</h2>
                 <ul>
                     <li>
-                        <strong>Proxmox VE</strong> — open-source Linux-based hypervisor (KVM + LXC), free to use,
+                        <strong>Proxmox VE</strong>: open-source Linux-based hypervisor (KVM + LXC), free to use,
                         managed via a web UI and command line. Installed on HP09.
                     </li>
                     <li>
-                        <strong>VMware ESXi</strong> — industry-leading commercial Type 1 hypervisor by Broadcom,
+                        <strong>VMware ESXi</strong>: industry-leading commercial Type 1 hypervisor by Broadcom,
                         managed via the vSphere Client and vCenter Server Appliance (VCSA). Installed on HP11/HP12.
                     </li>
                 </ul>
 
                 <h2>What We Implemented</h2>
                 <ul>
-                    <li><strong>Hypervisor Installation</strong> — Remote deployment via ILO5 HTML5 console; network configuration (static IP, gateway, DNS)</li>
-                    <li><strong>VM Creation — GUI & CLI</strong> — Creating VMs through the web interface and via <code>qm create</code> (Proxmox) / <code>vmkfstools</code> + <code>vim-cmd</code> (ESXi)</li>
-                    <li><strong>OS Installation</strong> — Ubuntu 24.04 LTS (Linux server) and Windows 10/11 within VMs on both hypervisors</li>
-                    <li><strong>Hardware Changes</strong> — Adding/removing CPU cores, RAM, hard disks and NICs; live hot-plug of CPU/RAM where supported</li>
-                    <li><strong>Clone / Duplicate</strong> — Cloning VMs via GUI (Proxmox right-click Clone; vSphere Clone wizard) and by manually copying .vmdk/.vmx files on ESXi</li>
-                    <li><strong>Export</strong> — Exporting VMs as OVF/OVA (ESXi) and vzdump archives (Proxmox)</li>
-                    <li><strong>Hypervisor Config Backup</strong> — <code>tar czf proxmox-config-backup.tar.gz /etc/pve/</code> on Proxmox; <code>vim-cmd hostsvc/firmware/backup_config</code> on ESXi</li>
-                    <li><strong>VM Backup</strong> — Built-in scheduled backup jobs (Proxmox Datacenter → Backup); ghettoVCB script-based backup on ESXi Free</li>
-                    <li><strong>Snapshots</strong> — Create / rollback / delete snapshots on both platforms</li>
-                    <li><strong>VM Templates</strong> — Convert to template (Proxmox right-click; ESXi Template menu); manual VMDK clone + VMX edit workaround on ESXi Free</li>
-                    <li><strong>Remote Storage (CLOIF2 NAS)</strong> — Connected TrueNAS via NFS (Proxmox) and iSCSI (ESXi); used as shared datastore for VM files</li>
-                    <li><strong>Storage Migration</strong> — Live move of VM disks from local storage to NFS/iSCSI datastore while VM is running</li>
-                    <li><strong>Hypervisor Migration (vMotion / Proxmox Migrate)</strong> — Live migration of running VMs between two hypervisor nodes using shared iSCSI storage</li>
-                    <li><strong>User & Permission Management</strong> — Proxmox datacenter users + roles; vCenter SSO users, custom roles, and ACL propagation</li>
-                    <li><strong>Patching</strong> — ESXi compliance check via vSphere Lifecycle Manager; host reported Compliant against Critical Host Patches baseline</li>
-                    <li><strong>High Availability (Specialisation)</strong> — vSphere HA cluster with two ESXi hosts, shared iSCSI storage, heartbeat datastores, admission control and failure response policies configured</li>
+                    <li><strong>Hypervisor Installation</strong>: Remote deployment via ILO5 HTML5 console; network configuration (static IP, gateway, DNS)</li>
+                    <li><strong>VM Creation (GUI & CLI)</strong>: Creating VMs through the web interface and via <code>qm create</code> (Proxmox) / <code>vmkfstools</code> + <code>vim-cmd</code> (ESXi)</li>
+                    <li><strong>OS Installation</strong>: Ubuntu 24.04 LTS (Linux server) and Windows 10/11 within VMs on both hypervisors</li>
+                    <li><strong>Hardware Changes</strong>: Adding/removing CPU cores, RAM, hard disks and NICs; live hot-plug of CPU/RAM where supported</li>
+                    <li><strong>Clone / Duplicate</strong>: Cloning VMs via GUI (Proxmox right-click Clone; vSphere Clone wizard) and by manually copying .vmdk/.vmx files on ESXi</li>
+                    <li><strong>Export</strong>: Exporting VMs as OVF/OVA (ESXi) and vzdump archives (Proxmox)</li>
+                    <li><strong>Hypervisor Config Backup</strong>: <code>tar czf proxmox-config-backup.tar.gz /etc/pve/</code> on Proxmox; <code>vim-cmd hostsvc/firmware/backup_config</code> on ESXi</li>
+                    <li><strong>VM Backup</strong>: Built-in scheduled backup jobs (Proxmox Datacenter → Backup); ghettoVCB script-based backup on ESXi Free</li>
+                    <li><strong>Snapshots</strong>: Create / rollback / delete snapshots on both platforms</li>
+                    <li><strong>VM Templates</strong>: Convert to template (Proxmox right-click; ESXi Template menu); manual VMDK clone + VMX edit workaround on ESXi Free</li>
+                    <li><strong>Remote Storage (CLOIF2 NAS)</strong>: Connected TrueNAS via NFS (Proxmox) and iSCSI (ESXi); used as shared datastore for VM files</li>
+                    <li><strong>Storage Migration</strong>: Live move of VM disks from local storage to NFS/iSCSI datastore while VM is running</li>
+                    <li><strong>Hypervisor Migration (vMotion / Proxmox Migrate)</strong>: Live migration of running VMs between two hypervisor nodes using shared iSCSI storage</li>
+                    <li><strong>User & Permission Management</strong>: Proxmox datacenter users + roles; vCenter SSO users, custom roles, and ACL propagation</li>
+                    <li><strong>Patching</strong>: ESXi compliance check via vSphere Lifecycle Manager; host reported Compliant against Critical Host Patches baseline</li>
+                    <li><strong>High Availability (Specialisation)</strong>: vSphere HA cluster with two ESXi hosts, shared iSCSI storage, heartbeat datastores, admission control and failure response policies configured</li>
                 </ul>
 
                 <h2>Video Tutorials</h2>
-                <p class="placeholder-block">
-                    Two video tutorials are currently in production and will be added here once finished.
-                    One covers a key topic on Proxmox VE, the other on VMware ESXi.
-                    Both include a live screen recording with audio commentary.
-                </p>
-
-                <h2>Specialisation Presentation — High Availability</h2>
-                <p class="placeholder-block">
-                    Our 20-minute specialisation presentation on High Availability will take place during
-                    the week of 15–19 June 2026. It covers the theoretical concept of HA, a comparison of
-                    the HA implementation in Proxmox VE and VMware vSphere, and a live demonstration
-                    on one of the two hypervisors.
-                </p>
-
-                <h2>Key Takeaways</h2>
-                <p class="placeholder-block">
-                    This project was my deepest dive yet into enterprise virtualisation. Working simultaneously
-                    with Proxmox and ESXi on physical HP servers gave me a clear picture of how different
-                    open-source and commercial hypervisors approach the same problems. Configuring live
-                    migration, shared iSCSI storage, and a proper HA cluster felt like real sysadmin work —
-                    including the troubleshooting that comes with it. Setting up the second heartbeat datastore
-                    to resolve the HA warning was a good example of how production environments demand
-                    attention to details that lab guides often skip.
-                </p>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Proxmox VE</h3>
+                        <video controls preload="metadata" style="width: 100%; max-width: 900px; border-radius: 8px;">
+                            <source src="pve-cut_3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">VMware ESXi</h3>
+                        <video controls preload="metadata" style="width: 100%; max-width: 900px; border-radius: 8px;">
+                            <source src="esxi-cut_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -143,7 +133,7 @@
                 <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:svenkug@icloud.com">
+                <a href="mailto:svenkug@proton.me">
                     <i class="fas fa-envelope"></i>
                 </a>
                 <a href="https://linktr.ee/svenkug" target="_blank">

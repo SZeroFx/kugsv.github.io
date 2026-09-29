@@ -1,164 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates - Sven Kugener</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates – Sven Kugener</title>
+  <meta name="description" content="IT Technician & Cloud Computing Student, specialized in Linux servers, networking, security, virtualization, web development.">
+  <meta name="theme-color" content="#07090f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    try { var t = localStorage.getItem('theme'); } catch (e) {}
+    document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="brand-title">Web Portfolio</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certificates.html" class="active">Certificates</a></li>
-                <li><a href="externe.html">Externals</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1><i class="fas fa-certificate"></i> Certificates</h1>
-            <p>My professional qualifications</p>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
-    <section class="certificates-section">
-        <div class="container">
-            <div class="certificates-grid">
-                <!-- Word Associate Certificate -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <img src="word1.png" alt="Word Associate" class="certificate-img">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Microsoft Office Specialist</h3>
-                        <p class="certificate-title">Word Associate (Microsoft 365 Apps)</p>
-                        <a href="https://www.credly.com/badges/80168a26-cbad-4857-a31a-30431826efeb" 
-                           class="certificate-link" 
-                           target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Badge
-                        </a>
-                    </div>
-                    <div class="certificate-badge">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                </div>
-
-                <!-- Word Expert Certificate -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <img src="word2.png" alt="Word Expert" class="certificate-img">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Microsoft Office Specialist</h3>
-                        <p class="certificate-title">Word Expert (Microsoft 365 Apps)</p>
-                        <a href="https://www.credly.com/badges/93180b1f-1d15-4c10-b1f9-f5ce8635d8a3" 
-                           class="certificate-link" 
-                           target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Badge
-                        </a>
-                    </div>
-                    <div class="certificate-badge">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                </div>
-
-                <!-- PowerPoint Certificate -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <img src="powerpoint1.png" alt="PowerPoint Associate" class="certificate-img">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Microsoft Office Specialist</h3>
-                        <p class="certificate-title">PowerPoint Associate (Microsoft 365 Apps)</p>
-                        <a href="https://www.credly.com/badges/f714d012-ce97-45a6-a61c-a0f5ab0ed98f" 
-                           class="certificate-link" 
-                           target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Badge
-                        </a>
-                    </div>
-                    <div class="certificate-badge">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                </div>
-                
-                <!-- Excel Certificate -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <img src="excel1.png" alt="Excel Associate" class="certificate-img">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Microsoft Office Specialist</h3>
-                        <p class="certificate-title">Excel Associate (Microsoft 365 Apps)</p>
-                        <a href="https://www.credly.com/badges/2428d0e9-449b-4359-befe-9a3115e28357" 
-                           class="certificate-link" 
-                           target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Badge
-                        </a>
-                    </div>
-                    <div class="certificate-badge">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                </div>
-
-                <!-- Office Associate Certificate -->
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <img src="office1.png" alt="Office Associate" class="certificate-img">
-                    </div>
-                    <div class="certificate-content">
-                        <h3>Microsoft Office Specialist</h3>
-                        <p class="certificate-title">Office Associate (Microsoft 365 Apps)</p>
-                        <a href="https://www.credly.com/badges/a9d62572-521b-4642-8e29-001cf80c1aae" 
-                           class="certificate-link" 
-                           target="_blank">
-                            <i class="fas fa-external-link-alt"></i> View Badge
-                        </a>
-                    </div>
-                    <div class="certificate-badge">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:svenkug@proton.me">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://linktr.ee/svenkug" target="_blank">
-                    <i class="fas fa-link"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<body data-page="certificates">
+  <div id="app" class="loader" aria-busy="true"></div>
+  <noscript><p style="padding:2rem;text-align:center">This portfolio needs JavaScript enabled.</p></noscript>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

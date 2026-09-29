@@ -1,139 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Sven Kugener</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sven Kugener</title>
+  <meta name="description" content="IT Technician & Cloud Computing Student, specialized in Linux servers, networking, security, virtualization, web development.">
+  <meta name="theme-color" content="#07090f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    try { var t = localStorage.getItem('theme'); } catch (e) {}
+    document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="brand-title">Web Portfolio</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="externe.html">Externals</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background">
-            <canvas id="matrix-canvas"></canvas>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="glitch" data-text="Sven Kugener">Sven Kugener</h1>
-                <p class="subtitle">IT Technician & Cloud Computing Student, specialized in Linux servers, networking, security, virtualization, web development.</p>
-                <div class="hero-buttons">
-                    <a href="projects.html" class="btn btn-primary">
-                        <i class="fas fa-code"></i> View Projects
-                    </a>
-                    <a href="contact.html" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Contact
-                    </a>
-                    <div class="cv-dropdown" id="cv-dropdown">
-                        <a href="#" class="btn btn-secondary cv-dropdown-toggle" id="cv-dropdown-toggle">
-                            <i class="fas fa-download"></i> Download CV <i class="fas fa-chevron-down" style="font-size: 0.7em;"></i>
-                        </a>
-                        <div class="cv-dropdown-menu">
-                            <a href="cv_en_kugsv.pdf" download>
-                                <i class="fas fa-file-pdf"></i> English
-                            </a>
-                            <a href="cv_fr_kugsv.pdf" download>
-                                <i class="fas fa-file-pdf"></i> Français
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Quick Overview Section -->
-    <section class="overview">
-        <div class="container">
-            <!-- Profile Image Section -->
-            <div class="profile-section">
-                <div class="profile-image-container">
-                    <img src="profile.jpg" alt="Sven Kugener" class="profile-image">
-                </div>
-                <div class="profile-text">
-                    <h2>About Me</h2>
-                    <p>I'm a BTS Cloud Computing student specializing in Linux server administration, networking, security, project management and web development.</p>
-
-                    <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--secondary-color); font-size: 1.2rem;">My Development During the BTS</h3>
-                    <p>
-                        Over time I have learned that organisation and planning are essential. Building on stable, well founded projects matters, because without a solid foundation it simply is not possible. I also learned not to limit myself to only what is asked of me, but to look beyond the task at hand. When working with a piece of software it is important to keep learning more about it and to actually test things myself. One lesson stands out in particular: not letting AI do everything, since that leads to losing track of the bigger picture and ultimately to not really knowing your own projects anymore. AI should always be used hand in hand with your own work, not as a replacement for it.
-                    </p>
-                </div>
-            </div>
-
-            <h2 class="section-title">Overview</h2>
-            <div class="overview-grid">
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Projects</h3>
-                    <p>School and private projects in web development and more</p>
-                    <a href="projects.html" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Skills</h3>
-                    <p>Broad expertise in servers, web development, and tools</p>
-                    <a href="skills.html" class="card-link">Details <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificates</h3>
-                    <p>Microsoft Office Specialist certifications</p>
-                    <a href="certificates.html" class="card-link">View <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:svenkug@proton.me">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://linktr.ee/svenkug" target="_blank">
-                    <i class="fas fa-link"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<body data-page="home">
+  <div id="app" class="loader" aria-busy="true"></div>
+  <noscript><p style="padding:2rem;text-align:center">This portfolio needs JavaScript enabled.</p></noscript>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

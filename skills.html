@@ -1,152 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills - Sven Kugener</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills – Sven Kugener</title>
+  <meta name="description" content="IT Technician & Cloud Computing Student, specialized in Linux servers, networking, security, virtualization, web development.">
+  <meta name="theme-color" content="#07090f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    try { var t = localStorage.getItem('theme'); } catch (e) {}
+    document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <span class="brand-title">Web Portfolio</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html" class="active">Skills</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="externe.html">Externals</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1><i class="fas fa-code"></i> My Skills</h1>
-            <p>Technologies and tools I work with</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container">
-            <!-- Server & Cloud -->
-            <div class="skill-category">
-                <h2 class="category-title">
-                    <i class="fas fa-server"></i>
-                    Server & Cloud
-                </h2>
-                <div class="skill-tags">
-                    <span class="skill-tag">Linux Server Administration</span>
-                    <span class="skill-tag">Bash</span>
-                    <span class="skill-tag">Windows 10/11/Server</span>
-                    <span class="skill-tag">PowerShell</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">VirtualBox</span>
-                    <span class="skill-tag">Proxmox VE</span>
-                    <span class="skill-tag">VMware ESXi</span>
-                    <span class="skill-tag">VMware vSphere / vCenter</span>
-                    <span class="skill-tag">Azure</span>
-                    <span class="skill-tag">TrueNAS</span>
-                </div>
-            </div>
-
-            <!-- Networking -->
-            <div class="skill-category">
-                <h2 class="category-title">
-                    <i class="fas fa-network-wired"></i>
-                    Networking
-                </h2>
-                <div class="skill-tags">
-                    <span class="skill-tag">TCP/IP</span>
-                    <span class="skill-tag">IPv4 / IPv6</span>
-                    <span class="skill-tag">SLAAC</span>
-                    <span class="skill-tag">DNS</span>
-                    <span class="skill-tag">DHCP</span>
-                    <span class="skill-tag">VLANs</span>
-                    <span class="skill-tag">ACL</span>
-                    <span class="skill-tag">Spanning Tree (STP)</span>
-                    <span class="skill-tag">OSPF</span>
-                    <span class="skill-tag">NAT</span>
-                    <span class="skill-tag">VPN / Tailscale</span>
-                    <span class="skill-tag">Firewall</span>
-                    <span class="skill-tag">iSCSI / NFS / SMB</span>
-                </div>
-            </div>
-
-            <!-- Web Development -->
-            <div class="skill-category">
-                <h2 class="category-title">
-                    <i class="fas fa-globe"></i>
-                    Web Development
-                </h2>
-                <div class="skill-tags">
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Laravel</span>
-                    <span class="skill-tag">AJAX</span>
-                    <span class="skill-tag">APIs</span>
-                    <span class="skill-tag">SQL</span>
-                </div>
-            </div>
-
-            <!-- Development Tools -->
-            <div class="skill-category">
-                <h2 class="category-title">
-                    <i class="fas fa-tools"></i>
-                    Development Tools
-                </h2>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Microsoft Office 365 Power Platform</span>
-                </div>
-            </div>
-
-            <!-- Project Management -->
-            <div class="skill-category">
-                <h2 class="category-title">
-                    <i class="fas fa-tasks"></i>
-                    Project Management
-                </h2>
-                <div class="skill-tags">
-                    <span class="skill-tag">Scrum</span>
-                    <span class="skill-tag">Kanban</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Sven Kugener. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/sven-kugener-177646387/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:svenkug@proton.me">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://linktr.ee/svenkug" target="_blank">
-                    <i class="fas fa-link"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<body data-page="skills">
+  <div id="app" class="loader" aria-busy="true"></div>
+  <noscript><p style="padding:2rem;text-align:center">This portfolio needs JavaScript enabled.</p></noscript>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>

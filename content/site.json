@@ -1,0 +1,541 @@
+{
+  "site": {
+    "name": "Sven Kugener",
+    "brand": "Web Portfolio",
+    "description": "IT Technician & Cloud Computing Student, specialized in Linux servers, networking, security, virtualization, web development.",
+    "email": "svenkug@proton.me",
+    "footer": "© 2026 Sven Kugener. All rights reserved.",
+    "nav": [
+      {
+        "label": "Home",
+        "href": "index.html"
+      },
+      {
+        "label": "Projects",
+        "href": "projects.html"
+      },
+      {
+        "label": "Skills",
+        "href": "skills.html"
+      },
+      {
+        "label": "Certificates",
+        "href": "certificates.html"
+      },
+      {
+        "label": "Externals",
+        "href": "externe.html"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html"
+      }
+    ],
+    "socials": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/sven-kugener-177646387/",
+        "icon": "fab fa-linkedin"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:svenkug@proton.me",
+        "icon": "fas fa-envelope"
+      },
+      {
+        "label": "Linktree",
+        "url": "https://linktr.ee/svenkug",
+        "icon": "fas fa-link"
+      }
+    ]
+  },
+  "home": {
+    "title": "Sven Kugener",
+    "subtitle": "IT Technician & Cloud Computing Student, specialized in Linux servers, networking, security, virtualization, web development.",
+    "buttons": [
+      {
+        "label": "View Projects",
+        "url": "projects.html",
+        "icon": "fas fa-code",
+        "style": "primary",
+        "download": false
+      },
+      {
+        "label": "Contact",
+        "url": "contact.html",
+        "icon": "fas fa-envelope",
+        "style": "secondary",
+        "download": false
+      }
+    ],
+    "cv": {
+      "label": "Download CV",
+      "icon": "fas fa-download",
+      "files": [
+        {
+          "label": "English",
+          "file": "assets/docs/cv_en_kugsv.pdf"
+        },
+        {
+          "label": "Français",
+          "file": "assets/docs/cv_fr_kugsv.pdf"
+        }
+      ]
+    },
+    "profileImage": "assets/img/profile.jpg",
+    "aboutTitle": "About Me",
+    "about": "I'm a BTS Cloud Computing student specializing in Linux server administration, networking, security, project management and web development.",
+    "developmentTitle": "My Development During the BTS",
+    "development": "Over time I have learned that organisation and planning are essential. Building on stable, well founded projects matters, because without a solid foundation it simply is not possible. I also learned not to limit myself to only what is asked of me, but to look beyond the task at hand. When working with a piece of software it is important to keep learning more about it and to actually test things myself. One lesson stands out in particular: not letting AI do everything, since that leads to losing track of the bigger picture and ultimately to not really knowing your own projects anymore. AI should always be used hand in hand with your own work, not as a replacement for it.",
+    "overviewTitle": "Overview",
+    "overview": [
+      {
+        "icon": "fas fa-project-diagram",
+        "title": "Projects",
+        "text": "School and private projects in web development and more",
+        "url": "projects.html",
+        "linkLabel": "Explore"
+      },
+      {
+        "icon": "fas fa-code",
+        "title": "Skills",
+        "text": "Broad expertise in servers, web development, and tools",
+        "url": "skills.html",
+        "linkLabel": "Details"
+      },
+      {
+        "icon": "fas fa-certificate",
+        "title": "Certificates",
+        "text": "Microsoft Office Specialist certifications",
+        "url": "certificates.html",
+        "linkLabel": "View"
+      }
+    ],
+    "featuredTitle": "Featured Projects",
+    "featuredCount": 3
+  },
+  "pages": {
+    "projects": {
+      "icon": "fas fa-project-diagram",
+      "title": "My Projects",
+      "subtitle": "A collection of my school and private projects",
+      "note": ""
+    },
+    "skills": {
+      "icon": "fas fa-code",
+      "title": "My Skills",
+      "subtitle": "Technologies and tools I work with",
+      "note": ""
+    },
+    "certificates": {
+      "icon": "fas fa-certificate",
+      "title": "Certificates",
+      "subtitle": "My professional qualifications",
+      "note": ""
+    },
+    "externals": {
+      "icon": "fas fa-chalkboard-user",
+      "title": "Externals",
+      "subtitle": "External experts who visited our class and what we learned from them",
+      "note": "These are from semester 2"
+    },
+    "contact": {
+      "icon": "fas fa-envelope",
+      "title": "Contact",
+      "subtitle": "Let's get in touch",
+      "note": ""
+    }
+  },
+  "labels": {
+    "filterAll": "All",
+    "backToProjects": "Back to Projects",
+    "viewBadge": "View Badge",
+    "videosTitle": "Video Tutorials",
+    "statProjects": "Projects",
+    "statSkills": "Skills",
+    "statCertificates": "Certificates",
+    "viewAllProjects": "View Projects",
+    "previous": "Previous",
+    "next": "Next",
+    "contents": "Contents"
+  },
+  "categories": [
+    {
+      "id": "school",
+      "label": "School"
+    },
+    {
+      "id": "private",
+      "label": "Private"
+    }
+  ],
+  "projects": [
+    {
+      "id": "lme",
+      "title": "LME",
+      "subtitle": "Luxembourg Media Engineering",
+      "icon": "",
+      "tags": [
+        "school",
+        "private"
+      ],
+      "summary": "An ambitious school entrepreneurship project that we're transforming into a real business.",
+      "banner": "assets/img/lme-banner.jpg",
+      "logo": "assets/img/lme-logo.png",
+      "links": [
+        {
+          "label": "Visit LME Website",
+          "url": "https://lme.lu",
+          "icon": "fas fa-external-link-alt",
+          "style": "primary",
+          "download": false
+        }
+      ],
+      "videos": [],
+      "body": "## Project Overview\n\n**LME** (lme.lu) is an ambitious school entrepreneurship project that we're transforming into a real business. What started as an academic initiative is now evolving into a full-fledged startup, combining our learning experience with real-world business development.\n\nLME provides a **Secure Multi-Tenant Hosting Platform** built on Hetzner infrastructure, designed to offer small organizations and individual clients reliable web hosting without the complexity and cost of large cloud providers.\n\n## Technology Stack\n\n### <i class=\"fas fa-server\"></i> Infrastructure & Virtualization\n\n- **Hetzner Dedicated Server** - Reliable German infrastructure provider\n- **Proxmox** - Enterprise-grade virtualization platform for VM management\n- **Docker + Docker Compose** - Container orchestration for service isolation\n\n### <i class=\"fas fa-globe\"></i> Web Services & Security\n\n- **Nginx** - High-performance web server and reverse proxy\n- **Cloudflare** - DNS management, DDoS protection, and security features\n- **SSH & Firewall** - Secure access and network protection\n\n### <i class=\"fas fa-chart-line\"></i> Monitoring & Management\n\n- **Raspberry Pi** - Independent external monitoring system\n- **Hetzner API** - Resource monitoring and server management\n- **Custom Scripts** - Automated availability checks and alerts\n\n## Technical Architecture\n\n- **VM-Level Separation** - Each client website runs in a dedicated Proxmox virtual machine\n- **Container Isolation** - Docker Compose separates services within each VM\n- **Network Segmentation** - Firewall rules prevent cross-tenant access\n- **Security Measures** - SSH key-based authentication, automated updates, regular backups\n\n## Business Development\n\nLME represents a unique combination of academic learning and real-world entrepreneurship:\n\n- **Project Management Course** - Developed for the Talent Exhibition as part of our school curriculum\n- **House of Entrepreneurship Partnership** - Guidance from Luxembourg's entrepreneurship ecosystem\n- **Team of Three** - Collaborative approach combining technical expertise and business development\n- **Market Focus** - Targeting small organizations who need reliable hosting without complexity\n"
+    },
+    {
+      "id": "luxrp",
+      "title": "LuxRP",
+      "subtitle": "",
+      "icon": "",
+      "tags": [
+        "private"
+      ],
+      "summary": "Private roleplay community project",
+      "banner": "assets/img/luxrp-banner.jpg",
+      "logo": "",
+      "links": [
+        {
+          "label": "Visit LuxRP Website",
+          "url": "https://luxrp.lu",
+          "icon": "fas fa-external-link-alt",
+          "style": "primary",
+          "download": false
+        },
+        {
+          "label": "Watch Reportage",
+          "url": "https://www.youtube.com/watch?v=GRHONXy4Xb0",
+          "icon": "fab fa-youtube",
+          "style": "secondary",
+          "download": false
+        }
+      ],
+      "videos": [],
+      "body": "## Project Overview\n\nLuxRP is a Luxembourg-based FiveM roleplay server that provides an immersive Grand Theft Auto V multiplayer experience. FiveM is a modification framework for GTA V, enabling players to engage in custom multiplayer experiences on dedicated servers with unique gameplay mechanics and community-driven roleplay scenarios.\n\n## Technology Stack\n\n- **FiveM** - Multiplayer modification framework for GTA V built on CitizenFX\n- **NUI (New UI)** - HTML-based user interface system using Chromium Embedded Framework\n- **HTML5, CSS3, JavaScript** - Frontend development for in-game interfaces\n- **Lua** - Server scripting and game logic (handled by other team members)\n\n## My Role\n\nI served as **Developer, Supporter, and Administrator**:\n\n### <i class=\"fas fa-laptop-code\"></i> Developer\n\n- **Custom UI Development** - Designed in-game interfaces using HTML, CSS, JavaScript within the FiveM NUI framework\n- **Responsive Design** - Created interfaces adapting to different screen resolutions\n- **Performance Optimization** - Ensured UIs were lightweight and performant\n\n### <i class=\"fas fa-headset\"></i> Supporter & Administrator\n\n- **Conflict Resolution** - Managed support situations with diplomacy and fairness\n- **Player Assistance** - Helped with technical issues and rule clarifications\n- **Server Management** - Player management, policy enforcement, team coordination\n\n## Featured Project: Funex\n\n**Funex** is a dual-platform communication system I developed that bridges web and in-game environments. It operates both as a standalone website and as an integrated in-game phone application.\n\n### <i class=\"fas fa-cogs\"></i> Technical Implementation\n\n- **Tech Stack** - HTML, CSS, JavaScript, PHP, MySQL, AJAX\n- **Dual Environment** - Works as web app and in-game mobile phone interface\n- **Character Sync** - Automatic synchronization with game database\n- **Multi-Character Support** - Each player can have multiple roleplay characters\n"
+    },
+    {
+      "id": "grading-dino",
+      "title": "Grading Dino",
+      "subtitle": "",
+      "icon": "",
+      "tags": [
+        "school"
+      ],
+      "summary": "Research and development project",
+      "banner": "",
+      "logo": "assets/img/grading-dino-logo.png",
+      "links": [],
+      "videos": [],
+      "body": "## Project Overview\n\nGrading Dino is a research and development project from our Project Management course, focused on creating a modern grade management system. The project emphasizes secure, scalable architecture using industry-standard technologies and best practices.\n\nThis system enables professors to efficiently manage student grades through an intuitive interface while maintaining strict security standards and data integrity.\n\n## Technology Stack\n\n### <i class=\"fas fa-server\"></i> Backend & Database\n\n- **Django 5.0** - Full-featured web framework with built-in admin panel, authentication, and security features\n- **PostgreSQL 16** - Production-ready database with full ACID compliance and concurrent write support\n- **Python 3.11** - Modern programming language with strong typing and excellent ecosystem\n\n### <i class=\"fas fa-shield-alt\"></i> Security\n\n- **Argon2 Password Hashing** - Winner of the Password Hashing Competition (2015), developed at University of Luxembourg\n- **Django Security Features** - Built-in CSRF, XSS, and SQL injection protection\n- **Server-Side Validation** - All logic and validation handled securely on the server\n\n### <i class=\"fas fa-paint-brush\"></i> Frontend\n\n- **Pico.css** - Minimalist CSS framework (~10KB) with semantic HTML styling\n- **Server-Side Rendering** - Django templates for security and simplicity\n\n### <i class=\"fab fa-docker\"></i> Deployment\n\n- **Docker + Docker Compose** - Containerized architecture with single-command startup\n- **Production-Ready** - Isolated containers with consistent environment across deployments\n\n## Key Features\n\n- **Admin Panel** - Complete grade management UI for professors without custom development\n- **Authentication & Authorization** - User roles and permissions out-of-the-box\n- **Automated Forms & Validation** - Django's form generation with server-side validation\n- **Data Integrity** - PostgreSQL ACID compliance ensures reliable grade storage\n- **Concurrent Operations** - Multiple professors can grade simultaneously\n- **Single Command Deployment** - Simple `docker compose up` to start the entire system\n\n## Technical Approach\n\nThe project follows Django's \"batteries included\" philosophy, leveraging built-in features for rapid, secure development. The architecture prioritizes:\n\n- **Convention over Configuration** - Reduced complexity through framework standards\n- **Security by Default** - Multiple layers of built-in protection\n- **Scalability** - Docker containerization enables easy horizontal scaling\n- **Academic Credibility** - Argon2's Luxembourg university origin strengthens technical justification\n\n## Research Outcomes\n\nThis research project successfully demonstrated how modern web frameworks and containerization technologies can create secure, maintainable grade management systems with minimal custom development. The choice of Argon2, developed at University of Luxembourg, provides both technical excellence and local academic significance.\n"
+    },
+    {
+      "id": "gpu-presentation",
+      "title": "GPU Presentation",
+      "subtitle": "Cloud Infrastructure (CLOIF)",
+      "icon": "fas fa-microchip",
+      "tags": [
+        "school"
+      ],
+      "summary": "CLOIF presentation about graphics processing units",
+      "banner": "",
+      "logo": "",
+      "links": [
+        {
+          "label": "Download Presentation",
+          "url": "assets/docs/GPU_kugsv549.pptx",
+          "icon": "fas fa-download",
+          "style": "primary",
+          "download": true
+        }
+      ],
+      "videos": [],
+      "body": "## Project Overview\n\nA comprehensive presentation about Graphics Processing Units (GPUs) created for the Cloud Infrastructure (CLOIF) course. The presentation covers GPU architecture, their role in modern computing, and their applications in cloud environments.\n\n## Topics Covered\n\n- **GPU Architecture** - Structure and components of modern graphics cards\n- **GPU vs CPU** - Differences in processing approaches and use cases\n- **Cloud GPU Computing** - GPU virtualization and cloud GPU services\n- **Applications** - Gaming, AI/ML, rendering, and scientific computing\n\n## Course Context\n\nThis presentation was part of the BTS Cloud Computing curriculum, specifically for the Cloud Infrastructure module. It demonstrates understanding of hardware components essential for cloud computing environments.\n"
+    },
+    {
+      "id": "home-cloud",
+      "title": "Private Photo Cloud",
+      "subtitle": "Self-hosted · Google & Apple independent",
+      "icon": "fas fa-cloud",
+      "tags": [
+        "private"
+      ],
+      "summary": "Self-hosted Google Photos alternative: Immich on a Raspberry Pi 4, storage on a Ugreen NAS, accessible from anywhere via Tailscale",
+      "banner": "",
+      "logo": "",
+      "links": [],
+      "videos": [],
+      "body": "## Overview\n\nSelf-hosted replacement for Google Photos and Apple iCloud. Photos live on a local NAS, **Immich** runs in Docker on a Raspberry Pi 4, and **Tailscale** makes it accessible from anywhere, with no subscription and no third party cloud.\n\n## Hardware\n\n- **Ugreen NAS DH2300 (2-Bay)**: 2× 4 TB in RAID 1\n- **Raspberry Pi 4 (8 GB)**: Docker host\n\n## How it works\n\nThe NAS doesn't support Docker, so storage and compute are split: the NAS share is mounted on the Pi, and Immich reads and writes photos directly to that mount. Tailscale connects all my devices in a private mesh network, with no port forwarding and no public IP needed.\n\n## Software\n\n- **Immich**: self-hosted photo management, automatic mobile backup, face recognition, Google Photos-like UI\n- **Docker**: runs the full Immich stack (server, ML, database, Redis)\n- **Tailscale**: WireGuard-based VPN for secure remote access\n"
+    },
+    {
+      "id": "vircl",
+      "title": "Server Virtualization Systems",
+      "subtitle": "VIRCL: BTS Cloud Computing",
+      "icon": "fas fa-layer-group",
+      "tags": [
+        "school"
+      ],
+      "summary": "Proxmox VE & VMware ESXi: hypervisor setup, VM management, live migration and High Availability, VIRCL module",
+      "banner": "",
+      "logo": "",
+      "links": [
+        {
+          "label": "Download Documentation",
+          "url": "assets/docs/Documenatation.pdf",
+          "icon": "fas fa-download",
+          "style": "primary",
+          "download": true
+        }
+      ],
+      "videos": [
+        {
+          "title": "Proxmox VE",
+          "src": "assets/video/pve-cut_3.mp4"
+        },
+        {
+          "title": "VMware ESXi",
+          "src": "assets/video/esxi-cut_1.mp4"
+        }
+      ],
+      "videosTitle": "Video Tutorials",
+      "body": "## Project Overview\n\nIn the VIRCL (Virtualization in the Cloud) module, we deployed and compared two industry-standard Type 1 hypervisors, **Proxmox VE** and **VMware ESXi**, on real HP server hardware in the school server room. Starting from bare-metal installation via ILO remote management, we covered the full lifecycle of virtual machines: creation via GUI and CLI, hardware configuration, cloning, snapshots, templates, backups, storage migration, and live hypervisor migration. Our specialisation topic is **High Availability (HA)**.\n\n## Team\n\n- Würth Eric\n- Simon Max\n- Kugener Sven\n\n## Hypervisors Used\n\n- **Proxmox VE**: open-source Linux-based hypervisor (KVM + LXC), free to use, managed via a web UI and command line. Installed on HP09.\n- **VMware ESXi**: industry-leading commercial Type 1 hypervisor by Broadcom, managed via the vSphere Client and vCenter Server Appliance (VCSA). Installed on HP11/HP12.\n\n## What We Implemented\n\n- **Hypervisor Installation**: Remote deployment via ILO5 HTML5 console; network configuration (static IP, gateway, DNS)\n- **VM Creation (GUI & CLI)**: Creating VMs through the web interface and via `qm create` (Proxmox) / `vmkfstools` + `vim-cmd` (ESXi)\n- **OS Installation**: Ubuntu 24.04 LTS (Linux server) and Windows 10/11 within VMs on both hypervisors\n- **Hardware Changes**: Adding/removing CPU cores, RAM, hard disks and NICs; live hot-plug of CPU/RAM where supported\n- **Clone / Duplicate**: Cloning VMs via GUI (Proxmox right-click Clone; vSphere Clone wizard) and by manually copying .vmdk/.vmx files on ESXi\n- **Export**: Exporting VMs as OVF/OVA (ESXi) and vzdump archives (Proxmox)\n- **Hypervisor Config Backup**: `tar czf proxmox-config-backup.tar.gz /etc/pve/` on Proxmox; `vim-cmd hostsvc/firmware/backup_config` on ESXi\n- **VM Backup**: Built-in scheduled backup jobs (Proxmox Datacenter → Backup); ghettoVCB script-based backup on ESXi Free\n- **Snapshots**: Create / rollback / delete snapshots on both platforms\n- **VM Templates**: Convert to template (Proxmox right-click; ESXi Template menu); manual VMDK clone + VMX edit workaround on ESXi Free\n- **Remote Storage (CLOIF2 NAS)**: Connected TrueNAS via NFS (Proxmox) and iSCSI (ESXi); used as shared datastore for VM files\n- **Storage Migration**: Live move of VM disks from local storage to NFS/iSCSI datastore while VM is running\n- **Hypervisor Migration (vMotion / Proxmox Migrate)**: Live migration of running VMs between two hypervisor nodes using shared iSCSI storage\n- **User & Permission Management**: Proxmox datacenter users + roles; vCenter SSO users, custom roles, and ACL propagation\n- **Patching**: ESXi compliance check via vSphere Lifecycle Manager; host reported Compliant against Critical Host Patches baseline\n- **High Availability (Specialisation)**: vSphere HA cluster with two ESXi hosts, shared iSCSI storage, heartbeat datastores, admission control and failure response policies configured\n"
+    },
+    {
+      "id": "truenas",
+      "title": "TrueNAS NAS Server",
+      "subtitle": "CLOIF2: Cloud Infrastructure",
+      "icon": "fas fa-server",
+      "tags": [
+        "school"
+      ],
+      "summary": "Setup and configuration of a TrueNAS Community Edition NAS server on real server hardware, CLOIF2 group project",
+      "banner": "",
+      "logo": "",
+      "links": [
+        {
+          "label": "Download Documentation",
+          "url": "assets/docs/Server_Documentation.pdf",
+          "icon": "fas fa-download",
+          "style": "primary",
+          "download": true
+        }
+      ],
+      "videos": [],
+      "body": "## Project Overview\n\nIn the CLOIF2 (Cloud Infrastructure) module, our group of three set up and fully configured a TrueNAS Community Edition NAS server on real enterprise server hardware. Starting from bare metal, we covered everything from RAID controller staging, OS installation, and network configuration through to user management, dataset creation, and client connectivity from both Windows and Linux.\n\n## Group\n\n- Würth Eric\n- Simon Max\n- Kugener Sven\n\n## Hardware\n\nWe worked on an **Intel SR2600URBRPR**: a 2U rack-mounted server with the following specs:\n\n- **CPU**: 2× Intel Xeon X5650\n- **RAM**: 8× 8 GB (64 GB total)\n- **Native HDD (SATA)**: 2× 160 GB\n- **RAID HDD (SAS)**: 3× 146 GB via Areca RAID controller with backup battery\n\n## Software\n\n**TrueNAS Community Edition** (formerly TrueNAS SCALE) is an open-source, Debian-based NAS OS using the ZFS file system, developed by iXsystems. Free to use with the same codebase as the enterprise edition.\n\n## What We Configured\n\n- **RAID Staging**: Accessed the Areca RAID controller web interface to prepare the hardware RAID array before OS installation\n- **OS Installation**: Installed TrueNAS Community Edition on the server\n- **Network Configuration**: Set a static IP, configured hostname, gateway, and DNS via the TrueNAS console and web UI\n- **Storage Pools**: Created both a software RAID pool (Mirror) and a hardware RAID pool (Stripe) using ZFS\n- **Users & Permissions**: Created SMB-enabled users and set ACL-based permissions on datasets\n- **File Sharing**: Connected to the NAS share from a Windows client (File Explorer / SMB) and from a Linux client (Nautilus / smb://)\n- **iSCSI vs NFS/SMB**: Studied and documented the differences between block-level (iSCSI) and file-level (NFS/SMB) storage protocols\n"
+    },
+    {
+      "id": "opsycl-windows",
+      "title": "File and Storage Services",
+      "subtitle": "Operating Systems in the Cloud",
+      "icon": "fab fa-windows",
+      "tags": [
+        "school"
+      ],
+      "summary": "Windows demo and documentation for Operating Systems in the Cloud",
+      "banner": "",
+      "logo": "",
+      "links": [
+        {
+          "label": "Download Documentation",
+          "url": "assets/docs/Documentation.pdf",
+          "icon": "fas fa-download",
+          "style": "primary",
+          "download": true
+        }
+      ],
+      "videos": [],
+      "body": "## Project Overview\n\nA demonstration and documentation project for the OPSYCL (Operating Systems in the Cloud) course, focusing on Windows operating systems in cloud environments.\n\n## Topics Covered\n\n- **Windows in Cloud Environments** - Deployment and management of Windows systems\n- **Virtualization** - Windows VMs in cloud infrastructure\n- **Administration** - Remote management and configuration\n\n## Course Context\n\nThis project was part of the BTS Cloud Computing curriculum, specifically for the Operating Systems in the Cloud (OPSYCL) module focusing on Windows systems.\n"
+    },
+    {
+      "id": "spinning",
+      "title": "Spinning",
+      "subtitle": "LGK: Relais pour la Vie",
+      "icon": "fas fa-bicycle",
+      "tags": [
+        "school"
+      ],
+      "summary": "Class-wide project for Relais pour la Vie at LGK, built the online leaderboard",
+      "banner": "",
+      "logo": "",
+      "links": [],
+      "videos": [],
+      "body": "## Project Overview\n\nSpinning was a class-wide project organized for **Relais pour la Vie** at our school (LGK). Instead of one big group working on everything together, every team in the class took ownership of a different part of the overall system. My part was building the **online leaderboard** that displayed live results during the event.\n\n## My Role\n\n- **Online Leaderboard**: designed and built the live leaderboard with SvelteKit\n\n## Technology Stack\n\n### <i class=\"fas fa-paint-brush\"></i> Frontend\n\n- **SvelteKit**: used to build and serve the live leaderboard interface\n\n## Working Across Teams\n\nBecause the project was split between several teams, each working on its own module, the biggest lesson wasn't technical it was about **dividing the work**. Staying within your own area worked well, but as soon as a topic crossed into someone else's scope, it had to be actively communicated rather than decided alone.\n\nA good example was **anonymizing student data**: this touched three different teams at once (Frontend, Frontend Admin and Database), so all of us had to sit down together and agree on a shared approach before anyone could keep building.\n"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Server & Cloud",
+      "icon": "fas fa-server",
+      "items": [
+        "Linux Server Administration",
+        "Bash",
+        "Windows 10/11/Server",
+        "PowerShell",
+        "Docker",
+        "VirtualBox",
+        "Proxmox VE",
+        "VMware ESXi",
+        "VMware vSphere / vCenter",
+        "Azure",
+        "TrueNAS"
+      ]
+    },
+    {
+      "title": "Networking",
+      "icon": "fas fa-network-wired",
+      "items": [
+        "TCP/IP",
+        "IPv4 / IPv6",
+        "SLAAC",
+        "DNS",
+        "DHCP",
+        "VLANs",
+        "ACL",
+        "Spanning Tree (STP)",
+        "OSPF",
+        "NAT",
+        "VPN / Tailscale",
+        "Firewall",
+        "iSCSI / NFS / SMB"
+      ]
+    },
+    {
+      "title": "Web Development",
+      "icon": "fas fa-globe",
+      "items": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Laravel",
+        "AJAX",
+        "APIs",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Development Tools",
+      "icon": "fas fa-tools",
+      "items": [
+        "Python",
+        "Git",
+        "Microsoft Office 365 Power Platform"
+      ]
+    },
+    {
+      "title": "Project Management",
+      "icon": "fas fa-tasks",
+      "items": [
+        "Scrum",
+        "Kanban"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "issuer": "Microsoft Office Specialist",
+      "title": "Word Associate (Microsoft 365 Apps)",
+      "image": "assets/img/word1.png",
+      "url": "https://www.credly.com/badges/80168a26-cbad-4857-a31a-30431826efeb",
+      "badgeIcon": "fab fa-microsoft"
+    },
+    {
+      "issuer": "Microsoft Office Specialist",
+      "title": "Word Expert (Microsoft 365 Apps)",
+      "image": "assets/img/word2.png",
+      "url": "https://www.credly.com/badges/93180b1f-1d15-4c10-b1f9-f5ce8635d8a3",
+      "badgeIcon": "fab fa-microsoft"
+    },
+    {
+      "issuer": "Microsoft Office Specialist",
+      "title": "PowerPoint Associate (Microsoft 365 Apps)",
+      "image": "assets/img/powerpoint1.png",
+      "url": "https://www.credly.com/badges/f714d012-ce97-45a6-a61c-a0f5ab0ed98f",
+      "badgeIcon": "fab fa-microsoft"
+    },
+    {
+      "issuer": "Microsoft Office Specialist",
+      "title": "Excel Associate (Microsoft 365 Apps)",
+      "image": "assets/img/excel1.png",
+      "url": "https://www.credly.com/badges/2428d0e9-449b-4359-befe-9a3115e28357",
+      "badgeIcon": "fab fa-microsoft"
+    },
+    {
+      "issuer": "Microsoft Office Specialist",
+      "title": "Office Associate (Microsoft 365 Apps)",
+      "image": "assets/img/office1.png",
+      "url": "https://www.credly.com/badges/a9d62572-521b-4642-8e29-001cf80c1aae",
+      "badgeIcon": "fab fa-microsoft"
+    }
+  ],
+  "externals": [
+    {
+      "name": "Jamey Jager",
+      "meta": "Former BTS CLC student, Project Management",
+      "icon": "fas fa-diagram-project",
+      "text": "Jamey, a former BTS CLC student, showed us how project management actually works in the real world: how large companies handle big budgets, deadlines, and stakeholders on real projects, beyond what we see in the theoretical course material."
+    },
+    {
+      "name": "Arnaud Charlier",
+      "meta": "ARHS Group, Luxembourg: Introduction to AWS",
+      "icon": "fab fa-aws",
+      "text": "Arnaud, from ARHS Group here in Luxembourg, spent a full week introducing us to AWS. Since we mostly work with Azure in class, it was valuable to see a different cloud provider and get a broader perspective on the cloud landscape."
+    },
+    {
+      "name": "Xavier Nix",
+      "meta": "Microsoft PowerShell & PS Scripting",
+      "icon": "fas fa-terminal",
+      "text": "Xavier taught us PowerShell and PS scripting. What made it interesting was learning the topic from a real expert instead of a regular teacher, and spending a whole week on the same subject, which let us go much deeper into the details and made it stick a lot better."
+    },
+    {
+      "name": "Noah Gallo & Clara Morgante",
+      "meta": "Devoteam Luxembourg: French Interview Simulation",
+      "icon": "fas fa-comments",
+      "text": "Noah and Clara from Devoteam Luxembourg ran a French language mock interview with us, Noah as the IT expert and Clara on the HR side. It was a realistic look at how a technical interview is actually structured and judged from both sides of the table."
+    },
+    {
+      "name": "ARHS Group Visit",
+      "meta": "AWS re:Invent Recap",
+      "icon": "fab fa-aws",
+      "text": "We visited ARHS Group again for a recap of AWS re:Invent, where they walked us through a wide range of AWS IT solutions and tools that were announced or highlighted at the conference."
+    }
+  ],
+  "contact": {
+    "cards": [
+      {
+        "title": "LinkedIn",
+        "text": "Sven Kugener",
+        "url": "https://www.linkedin.com/in/sven-kugener-177646387/",
+        "icon": "fab fa-linkedin",
+        "linkLabel": "Visit Profile",
+        "color": "#0a66c2"
+      },
+      {
+        "title": "Email",
+        "text": "svenkug@proton.me",
+        "url": "mailto:svenkug@proton.me",
+        "icon": "fas fa-envelope",
+        "linkLabel": "Send Email",
+        "color": "#8b5cf6"
+      },
+      {
+        "title": "Linktree",
+        "text": "All my links in one place",
+        "url": "https://linktr.ee/svenkug",
+        "icon": "fas fa-link",
+        "linkLabel": "Visit Linktree",
+        "color": "#43e660"
+      }
+    ],
+    "info": "I'm open to new opportunities and collaborations. Don't hesitate to reach out!"
+  }
+}
